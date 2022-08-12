@@ -3,7 +3,7 @@ class Program
 {
     static void Main()
     {
-                Console.WriteLine("Введите трехзначное число");
+        Console.WriteLine("Введите трехзначное число");
         int number1 = Convert.ToInt32(Console.ReadLine());
         if (number1 > 99 & number1 < 1000)
         {
