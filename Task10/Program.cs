@@ -1,7 +1,7 @@
 ﻿using System;
 class Program
 {
-    static void Main()
+    static void Dozens()
     {
         Console.WriteLine("Введите трехзначное число");
         int number1 = Convert.ToInt32(Console.ReadLine());
@@ -17,6 +17,19 @@ class Program
         else
         {
             Console.WriteLine("Число не трехзначное");
+        }
+    }
+    static void Main()
+    {
+        while (true)
+        {
+            Console.WriteLine("Необходимо узнать разряд десятков в трехзначном числе? Для выхода из программы - напишите end");
+            string answer = Console.ReadLine();
+            if (answer == "end")
+            {
+                break;
+            }
+            Dozens();
         }
     }
 }
